@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sovereign AI Policy for the Global South</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+    :root {
+      color-scheme: light;
+      --ink: #0c1020;
+      --muted: #4b5563;
+      --primary: #0d5c91;
+      --accent: #f4b13d;
+      --surface: #ffffff;
+      --surface-strong: #f7f8fb;
+      --border: #e4e7ee;
+      --shadow-1: 0 6px 18px rgba(15, 23, 42, 0.08);
+      --shadow-2: 0 18px 40px rgba(15, 23, 42, 0.12);
+      --radius-lg: 22px;
+      --radius-md: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #f3f5fb 0%, #eef2f7 36%, #e8edf5 100%);
+      color: var(--ink);
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 32px auto 64px;
+      padding: 0 20px 60px;
+    }
+
+    .surface {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-2);
+    }
+
+    .page-header {
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      background: linear-gradient(120deg, rgba(13, 92, 145, 0.08), rgba(244, 177, 61, 0.12));
+      border: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .brand span:first-child {
+      font-family: "Playfair Display", "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .brand span:last-child {
+      color: var(--muted);
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .logo {
+      width: 160px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .content {
+      margin-top: 24px;
+      padding: 32px 36px 40px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow-1);
+      border-radius: var(--radius-lg);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display", "Times New Roman", serif;
+      line-height: 1.2;
+      margin: 1.6em 0 0.6em;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2.2rem, 3vw, 2.8rem); }
+    h2 { font-size: clamp(1.7rem, 2.2vw, 2.1rem); }
+    h3 { font-size: clamp(1.35rem, 1.8vw, 1.6rem); }
+    h4 { font-size: 1.2rem; }
+    h5 { font-size: 1.05rem; }
+    h6 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; }
+
+    p { margin: 0.6em 0; color: var(--ink); }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .toc {
+      margin: 16px 0 28px;
+      padding: 20px 22px;
+      background: var(--surface-strong);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-1);
+    }
+
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .toc ul { list-style: none; padding-left: 0; margin: 0; }
+    .toc ul ul { padding-left: 18px; margin-top: 8px; }
+    .toc li { margin: 8px 0; }
+    .toc a {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0;
+      background: var(--surface);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+    }
+    td, th {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: rgba(13, 92, 145, 0.08);
+      font-weight: 600;
+    }
+    blockquote {
+      border-left: 4px solid var(--accent);
+      margin: 1.2em 0;
+      padding: 10px 18px;
+      background: rgba(244, 177, 61, 0.12);
+      color: var(--muted);
+      border-radius: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .page { margin-top: 16px; }
+      .page-header { flex-direction: column; align-items: flex-start; }
+      .logo { align-self: flex-end; width: 130px; }
+      .content { padding: 26px 24px 34px; }
+    }
+
+    @media (max-width: 600px) {
+      .page-header { padding: 22px; }
+      .content { padding: 22px 18px 30px; }
+      .brand span:first-child { font-size: 24px; }
+      .brand span:last-child { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header surface">
+      <div class="brand">
+        <span>Sovereign AI Policy for the Global South</span>
+        <span></span>
+      </div>
+      <img class="logo" src="nasscom_logo.png" alt="NASSCOM logo">
+    </header>
+    <main class="content">
+
+<p>Sovereign AI Policy for the Global South</p><h1><a id="_Toc222253483"></a>An Implementable and Actionable Strategic Framework</h1><p><strong>Abstract</strong></p><p>The global conversation on Sovereign AI is growing rapidly and this report makes three distinct contributions to the evolving discourse.</p><p>First, it argues that sovereignty must be defended across compute, data, architecture, deployment rails, talent, energy, and security—treating AI as strategic infrastructure rather than standalone software.</p><p>Second, it advances concrete instruments such as compute exchanges, federated public-interest datasets, DPI-linked application layers, and procurement-driven ecosystem creation.</p><p>Third, the report introduces a geopolitical and coalition-based lens: it positions Sovereign AI not as isolated national self-sufficiency, but as a federated Global South alliance strategy. In an era of semiconductor chokepoints, export controls, and platform dependency, it argues that sovereignty at scale will require shared compute corridors, interoperable governance standards, and coordinated industrial policy across emerging economies.</p><p>Contents</p><p><a href="#_Toc222253483">An Implementable and Actionable Strategic Framework	1</a></p><p><a href="#_Toc222253484">1. Introduction and Strategic Context	3</a></p><p><a href="#_Toc222253485">2. The “Triple Dependency” to Break	3</a></p><p><a href="#_Toc222253486">3. Global Sovereign AI Policy Landscape	4</a></p><p><a href="#_Toc222253487">4. Geopolitical Imperatives for a Global South AI Coalition	4</a></p><p><a href="#_Toc222253488">5. The Sovereign AI Stack (Integrated Architecture)	5</a></p><p><a href="#_Toc222253489">5.1 Stack Framework (Layered)	5</a></p><p><a href="#_Toc222253490">5.2. Compute and Infrastructure Sovereignty	6</a></p><p><a href="#_Toc222253491">5.3. Data Sovereignty and Digital Public Data Goods	7</a></p><p><a href="#_Toc222253492">5.4. Sovereign Model Ecosystems	7</a></p><p><a href="#_Toc222253493">5.5. Architecture and Stack Design	8</a></p><p><a href="#_Toc222253494">5.6. Application Sovereignty and Sectoral Transformation	8</a></p><p><a href="#_Toc222253495">5.7. Telecom and Connectivity Infrastructure	9</a></p><p><a href="#_Toc222253496">5.8. Talent and Workforce Sovereignty	9</a></p><p><a href="#_Toc222253497">5.9. Energy and Sustainability Infrastructure	9</a></p><p><a href="#_Toc222253498">5.10. Security, Trust, and Governance	10</a></p><p><a href="#_Toc222253499">6. Interoperability (DPI-led)	10</a></p><p><a href="#_Toc222253500">7. Financing and Industrial Policy	11</a></p><p><a href="#_Toc222253501">8. Procurement as a Market-Shaping Tool	11</a></p><p><a href="#_Toc222253502">9. Implementation Roadmap: The 3-6-36 Strategy	11</a></p><p><a href="#_Toc222253503">10. Scorecard (what leaders should track)	12</a></p><p><a href="#_Toc222253504">11. Conclusion	13</a></p><h1><a id="_Toc222253484"></a>1. Introduction and Strategic Context</h1><p>Artificial Intelligence is no longer a frontier technology discussion. It has become the central organising layer of economic power, geopolitical leverage, national security, and developmental acceleration. For the Global South, Sovereign AI is not a technological luxury. It is a structural necessity. Nations across Asia, Africa, Latin America, and parts of the Middle East are entering the AI age from asymmetric starting points. They hold population scale data, young digital talent, and growing digital infrastructure, yet remain dependent on foreign compute, proprietary models, and externally governed platforms.</p><p>Sovereign AI refers to the capacity of a nation or a coalition of nations to design, build, deploy, and govern artificial intelligence systems across the entire stack. This includes compute infrastructure, semiconductor supply chains, connectivity networks, foundational models, datasets, applications, governance frameworks, and safety protocols. The concentration of AI power within a handful of technology corporations and advanced economies creates structural dependency risks. These risks extend beyond economics into cultural autonomy, public policy independence, and cyber resilience.<sup><a href="#footnote-1" id="footnote-ref-1">[1]</a></sup></p><p>Evidence from multiple national strategies shows that AI infrastructure and model ecosystems are currently concentrated within a few countries and firms, limiting equitable participation and innovation diffusion across emerging economies. For the Global South, the central policy question is not whether to participate in AI, but how to participate without surrendering sovereignty.</p><p>Sovereign AI must also be framed as a public capacity issue. Without domestic control over AI systems, states may lose the ability to deliver core functions such as welfare distribution, public health forecasting, agricultural planning, and education infrastructure without external mediation.</p><p>This policy report synthesises sovereign AI strategies from leading nations and adapts them into an actionable, modular, and geopolitically aware framework for Global South adoption.</p><h1><a id="_Toc222253485"></a>2. The “Triple Dependency” to Break</h1><ol><li><strong>Hardware Dependency</strong>: over reliance on a single semiconductor/accelerator supply chain</li><li><strong>Algorithmic Dependency</strong>: reliance on black-box models that do not reflect local linguistic and cultural nuance</li><li><strong>Data Dependency</strong>: the data extraction cycle—local data refined abroad and resold as proprietary intelligence</li></ol><h1><a id="_Toc222253486"></a>3. Global Sovereign AI Policy Landscape</h1><p>The United States has pursued compute scale dominance through hyperscaler ecosystems, national research infrastructure, and semiconductor leadership. The National AI Research Resource model demonstrates federated compute access across institutions. China has focused on vertically integrated sovereignty through domestic chip manufacturing, state supported hyperscale compute clusters, and tightly governed model ecosystems.<sup><a href="#footnote-2" id="footnote-ref-2">[2]</a></sup></p><p>The European Union has taken a regulatory sovereignty route. Through initiatives such as GAIA X and the EU AI Act, Europe seeks data jurisdiction control, trusted cloud infrastructure, and ethical AI governance leadership. France, Germany, and Italy are investing in sovereign compute clouds and multilingual foundation models aligned to European languages. The GAIA-X initiative illustrates the challenges of fragmented governance and slow infrastructure convergence.</p><p>In the Global South, several countries are building early sovereign AI layers. </p><p>These efforts signal a shift. Sovereignty is no longer defined by owning models alone. It is defined by controlling the infrastructure, governance, and deployment rails on which AI systems operate.</p><h1><a id="_Toc222253487"></a>4. Geopolitical Imperatives for a Global South AI Coalition</h1><p>The geopolitics of AI is increasingly shaped by compute concentration, semiconductor chokepoints, cloud monopolies, and data colonialism. Export controls on advanced GPUs, restrictions on chip fabrication equipment, and proprietary model licensing frameworks are reshaping access to AI capability.</p><p>Many Global South nations risk becoming perpetual AI importers. Their data is exported, their talent migrates, and their digital economies run on foreign intelligence layers. This creates three strategic vulnerabilities. Economic extraction through platform dependency. Cultural homogenisation through non-local models. Security exposure through foreign hosted AI infrastructure.</p><p>The Global South must pursue compute non-alignment as a strategic imperative. As advanced GPUs and semiconductor supply chains become instruments of geopolitical coercion through export controls, sovereign AI cannot rely on single-vendor dependency. Just as energy security shaped twentieth-century geopolitics, compute security will shape twenty-first-century sovereignty.</p><p>A coalition approach offers leverage. Shared compute grids, multilingual datasets, open model ecosystems, and joint semiconductor partnerships can rebalance capability asymmetries. Sovereign AI for the Global South must therefore be architected as a federated alliance rather than isolated national stacks.</p><p>The European Union’s experience in building cross-national digital infrastructure demonstrates that sovereignty at scale is achieved through coordinated governance institutions rather than isolated national programs.</p><p>Across the Global South, sovereign layers are emerging:</p><ul><li><strong>India</strong>: sovereign stack spanning compute, datasets, and Indic language models</li><li><strong>Brazil</strong>: Portuguese language models and public health AI</li><li><strong>UAE</strong>: national foundation model programs</li><li><strong>Saudi Arabia</strong>: Arabic LLMs via national research clusters</li><li><strong>South Africa and Kenya</strong>: continental data exchanges and AI research hubs</li></ul><p><strong>Key shift:</strong> sovereignty is no longer just “owning models.” It is controlling infrastructure,  governance and deployment rails.</p><h1><a id="_Toc222253488"></a>5. The Sovereign AI Stack (Integrated Architecture)</h1><p>Sovereign AI should be treated as a <strong>vertical stack</strong>, not a standalone software program. Sovereignty must be defended at every layer, with “leapfrog” strategies that match Global South constraints and strengths.</p><h2><a id="_Toc222253489"></a>5.1 Stack Framework (Layered)</h2><table><thead><tr><th><p><strong>Stack Layer</strong></p></th><th><p><strong>Objective</strong></p></th><th><p><strong>Sovereign “Leapfrog” Strategy</strong></p></th><th><p><strong>Minimum Outcomes (0–18 months)</strong></p></th></tr></thead><tbody><tr><td><p><strong>Compute &amp; Infrastructure</strong></p></td><td><p>Hardware resilience and  broad access</p></td><td><p>Move from “buying GPUs” to National Compute Exchanges, GPU-as-a-Service (GaaS) for startups, and Regional Compute Cooperatives</p></td><td><p>Compute Exchange MVP; subsidised GPU cloud and academic HPC access; coalition burst-access design; Tier-1 inference hosting baseline</p></td></tr><tr><td><p><strong>Data</strong></p></td><td><p>Contextual assets and jurisdiction control</p></td><td><p>Treat population-scale data as Digital Public Goods via federated, privacy-preserving registries; “permissioned access by design”</p></td><td><p>Public Interest Dataset Registry v1; access tiers (“who can access what”); federated pilots in sensitive domains; language dataset pipeline</p></td></tr><tr><td><p><strong>Models</strong></p></td><td><p>Linguistic parity  and capability sovereignty</p></td><td><p>Prioritize Small Language Models (SLMs) and domain models optimized for regional dialects and cost efficiency; combine open innovation and strategic protection</p></td><td><p>Model Registry and baseline eval harness; multilingual roadmap; 2–3 domain/SLM priorities (agri/health/edu); guardrailed agent execution sandbox blueprint</p></td></tr><tr><td><p><strong>Applications</strong></p></td><td><p>Public value and scale through rails</p></td><td><p>Deploy via Digital Public Infrastructure (DPI<strong>)</strong>—integrate AI into existing identity, consent, payments, and data exchange rails; build reusable templates &amp; open APIs</p></td><td><p>3–5 lighthouse deployments; reference architectures and reusable templates; procurement pathways that reward outcomes</p></td></tr></tbody></table><h2><a id="_Toc222253490"></a>5.2. Compute and Infrastructure Sovereignty</h2><p>Compute is the foundation of AI sovereignty. Training advanced models requires hyperscale GPU clusters, high performance computing systems, and distributed cloud fabrics. Yet compute capacity is heavily concentrated globally.</p><p>Democratising access to compute has emerged as a policy priority in emerging ecosystems. Infrastructure must be treated as a shared national or regional resource rather than a purely commercial asset. Public compute exchanges, subsidised GPU clouds, and academic supercomputing grids enable wider innovation participation.</p><p>Sovereign compute strategy for the Global South must operate across three layers. National AI data centres that host sovereign cloud and model training infrastructure. Regional compute grids that pool GPU resources across allied nations. Edge compute nodes that bring inference capacity closer to rural and underserved populations.</p><p>Processing capability must include GPUs, TPUs, NPUs, and AI optimised accelerators. Investments in semiconductor packaging, fabrication partnerships, and chip design ecosystems are essential to reduce long term dependency. Sovereign AI cannot operate entirely on foreign controlled silicon supply chains.</p><h2><a id="_Toc222253491"></a>5.3. Data Sovereignty and Digital Public Data Goods</h2><p>Data is the raw material of AI systems. The Global South holds some of the richest population scale datasets in agriculture, health, climate, financial inclusion, and informal economies. Yet most of this data remains fragmented, unstructured, or externally hosted.</p><p>Policy frameworks must treat public interest datasets as Digital Public Goods. Shared repositories, federated data exchanges, and permissioned access frameworks allow innovation while preserving sovereignty. Treating AI building blocks as public digital infrastructure expands participation and reduces entry barriers.<sup><a href="#footnote-3" id="footnote-ref-3">[3]</a></sup></p><p>Federated data architectures are particularly relevant. Instead of centralising sensitive data, secure exchanges allow models to train across distributed datasets while preserving jurisdictional control. Consent frameworks, privacy sandboxes, and anonymisation layers must be embedded by design.</p><p>Language datasets require special priority. The Global South is linguistically diverse, and current global models underrepresent these languages. National language missions, speech corpora, and translation datasets must be scaled to prevent digital exclusion.</p><h2><a id="_Toc222253492"></a>5.4. Sovereign Model Ecosystems</h2><p>Foundation models shape knowledge representation, reasoning frameworks, and cultural narratives embedded within AI systems. Dependence on foreign models creates epistemic dependency. This makes sovereign AI a civilisational project: ensuring that emerging societies remain authors of their own developmental imagination rather than passive recipients of externally encoded worldviews.</p><p>Sovereign model ecosystems must include multilingual large language models, domain specific models for agriculture and public health, and multimodal systems aligned to local contexts. India’s sovereign stack vision emphasises culturally grounded, linguistically inclusive, and sector specialised models as strategic assets.</p><p>Model development must combine open innovation with strategic protection. Open models accelerate ecosystem participation, while sensitive models in defence or governance may require restricted deployment.</p><p>Future readiness requires agentic AI architectures capable of planning, reasoning, and autonomous decision support across public systems.</p><p>Sovereign AI ecosystems will not scale through supply-side infrastructure alone; governments must act as the first and most reliable buyers of sovereign AI applications. Public procurement mandates—prioritising locally governed models in healthcare, agriculture, education, and welfare—create stable demand and accelerate domestic innovation capacity.</p><h2><a id="_Toc222253493"></a>5.5. Architecture and Stack Design</h2><p>A Sovereign AI architecture must integrate compute, data, models, and applications into a unified yet modular stack. Fragmented systems create inefficiency and exclusion.</p><p>Digital Public Infrastructure offers a scalable design philosophy. Shared identity rails, consent frameworks, payment systems, and data exchanges can be extended into AI access layers. DPI based AI stacks create interoperable access pathways and reduce cost barriers .</p><p>The architecture should evolve in phases. Initial layers include dataset registries, compute marketplaces, and model repositories. Advanced layers include federated learning networks, cross border compute orchestration, and agent execution sandboxes.<sup><a href="#footnote-4" id="footnote-ref-4">[4]</a></sup></p><h2><a id="_Toc222253494"></a>5.6. Application Sovereignty and Sectoral Transformation</h2><p>Applications determine real world impact. Sovereign AI must prioritise public value sectors where the Global South holds contextual advantage.<sup><a href="#footnote-5" id="footnote-ref-5">[5]</a></sup></p><p>Agriculture intelligence platforms can optimise crop yields and climate resilience. Health AI systems can enable diagnostic access in underserved regions. Education copilots can localise curriculum delivery. Financial AI can expand credit inclusion.</p><p>Open application ecosystems should function as digital public goods. Shared templates, open APIs, and interoperable platforms allow startups and governments to build without dependency on proprietary ecosystems.</p><h2><a id="_Toc222253495"></a>5.7. Telecom and Connectivity Infrastructure</h2><p>Connectivity is the circulatory system of AI deployment. Without broadband access, AI remains urban concentrated.<sup><a href="#footnote-6" id="footnote-ref-6">[6]</a></sup></p><p>5G and future 6G expansion, rural fibre networks, satellite broadband, and future 6G ecosystems must be aligned to AI readiness. Edge compute nodes reduce latency and enable real time AI agents in remote geographies.</p><p>Universal broadband must be treated as an AI infrastructure priority, not just a telecom objective.</p><h2><a id="_Toc222253496"></a>5.8. Talent and Workforce Sovereignty</h2><p>Talent is the most abundant sovereign asset of the Global South. However, brain drain and skill asymmetry limit domestic AI capacity.</p><p>Policy must prioritise AI native workforce development. This includes foundation model engineering, chip design, AI safety, and agent architecture skills. Public compute access, open datasets, and research grants democratise participation.</p><p>University supercomputing access and startup compute credits expand innovation capacity across institutions.</p><p>Additionally, talent sovereignty requires retention institutions. Training engineers is insufficient if domestic ecosystems cannot absorb them.</p><h2><a id="_Toc222253497"></a>5.9. Energy and Sustainability Infrastructure</h2><p>AI infrastructure is energy intensive. Data centres, training clusters, and inference workloads require massive electricity supply.</p><p>Energy sovereignty must therefore be embedded within AI sovereignty. Renewable powered data centres, green hydrogen backup systems, and advanced cooling technologies reduce long term operational risk.</p><p>States like Maharashtra and Tamil Nadu have demonstrated the value of renewable energy mandates, but a national framework for green data centres can drive greener, more efficient growth.</p><p>Data centre energy consumption is projected to rise sharply as AI workloads scale, reinforcing the urgency of sustainable compute planning.</p><p>Grid modernisation, cross border energy corridors, and carbon aware compute scheduling must be institutionalised.</p><h2><a id="_Toc222253498"></a>5.10. Security, Trust, and Governance</h2><p>Sovereign AI must be secure by design. Threat vectors include model poisoning, prompt injection, data exfiltration, and agent manipulation.</p><p>National AI safety institutes, certification frameworks, and red teaming ecosystems must be established. Regulatory sandboxes enable innovation without systemic risk.</p><p>Data protection laws, cross border data transfer protocols, and AI audit requirements create trust foundations for adoption.</p><p>Sovereign AI must be secure-by-design. Threat vectors include:</p><ul><li>model poisoning</li><li>prompt injection</li><li>data exfiltration</li><li>agent manipulation</li></ul><p>Institutional requirements:</p><ul><li>national AI safety institutes</li><li>certification frameworks</li><li>red teaming ecosystems</li><li>regulatory sandboxes</li><li>AI audit requirements + incident response disciplines</li><li>continuous monitoring for Tier-1/Tier-2 deployments (drift, abuse, failures)</li></ul><h1><a id="_Toc222253499"></a>6. Interoperability (DPI-led)</h1><p>DPI enables scale and inclusion: identity rails, consent frameworks, payments, registries, and data exchanges extended into AI access layers.</p><p>Architecture evolution:</p><ul><li>Initial: dataset registries, compute marketplaces, model repositories</li><li>Advanced: federated learning networks, cross-border compute orchestration, <strong>agent execution sandboxes</strong></li></ul><h1><a id="_Toc222253500"></a>7. Financing and Industrial Policy</h1><p>Sovereign AI requires blended financing models. Public infrastructure funding, sovereign AI funds, development bank financing, and private hyperscaler partnerships must converge.</p><p>Incentives for chip fabrication, data centre investment, and open model development accelerate ecosystem growth.</p><p>Regional development banks can finance cross border AI infrastructure corridors.</p><p>Today, many Global South nations export raw data, import models, and pay recurring rents through API dependence, creating a structural AI trade deficit. Governments should track indicators such as model import expenditure, domestic inference retention, compute outflows, and local value capture. Sovereignty will increasingly depend on whether nations remain net exporters of data and talent or net producers of intelligence infrastructure and model capacity.</p><h1><a id="_Toc222253501"></a>8. Procurement as a Market-Shaping Tool<strong><sup><a href="#footnote-7" id="footnote-ref-7">[7]</a></sup></strong></h1><p>If governments continue purchasing foreign AI systems for education, policing, welfare, or health delivery, domestic ecosystems will remain structurally weak. Sovereign AI therefore requires procurement rules that treat AI systems as strategic infrastructure, similar to energy security.</p><p>A Global South sovereign AI strategy should mandate that critical public-sector deployments prioritise locally governed models, domestically hosted inference, etc.</p><p>Public procurement can become the single fastest accelerator of sovereign AI capacity by creating predictable demand for local firms and research institutions.</p><h1><a id="_Toc222253502"></a>9. Implementation Roadmap: The 3-6-36 Strategy</h1><p><strong>Phase I — Rails (0–6 months)</strong></p><ul><li><strong>Inventory</strong>: audit national data assets + compute capacity</li><li><strong>Policy</strong>: sovereign-first procurement mandate for public sector AI</li><li><strong>Registries</strong>: launch dataset registry + national model registry (provenance + safety)</li><li><strong>Assurance cell</strong>: baseline eval harness + red-teaming starter network</li><li><strong>Compute Exchange MVP</strong>: access rules + startup/university credits</li></ul><p><strong>Phase II — Activation (6–18 months)</strong></p><ul><li><strong>Lighthouse projects</strong>: launch 3 high-impact “Sovereign Agents”<ul><li>e.g., AI agri-advisor in local dialect; health diagnostic co-pilot; education co-pilot</li></ul></li><li><strong>SLM sprint</strong>: train domain-specific SLMs using curated local datasets</li><li>Federated data pilots in sensitive sectors</li><li>Expand monitoring, audits, and certification coverage</li><li>Coalition: shared dataset sprint + mutual evaluation recognition v1</li></ul><p><strong>Phase III — Scale (18–36 months)</strong></p><ul><li>Coalition Grid: link regional compute centres into a unified Global South Compute Exchange</li><li>Mature procurement market (outcome-based)</li><li>Agentic deployments with guardrails + operational agent execution sandboxes</li><li>Semiconductor partnerships: packaging + specialized AI-accelerator design pathways</li><li>Energy resilience scaled: renewables, hydrogen backup, cooling, corridors, carbon-aware scheduling</li></ul><p><strong>(what 3–6–36 is):</strong><br />The 3–6–36 construct is a communication shorthand for sequencing, not a rigid program design or a fixed delivery deadline. It groups the roadmap into (i) the first 3 immediate policy-and-institutional moves, (ii) the first 6 months to build foundational “rails”, and (iii) a 36-month horizon to reach scalable, resilient sovereign capacity. Countries should adapt the sequence and pacing to their starting baseline, constraints, and coalition arrangements.</p><h1><a id="_Toc222253503"></a>10. Scorecard (what leaders should track)</h1><ul><li>Percentage of Tier-1 systems running domestic/coalition-hosted inference</li><li>Compute Exchange capacity available and utilization (GPU/accelerator hours)</li><li>Datasets registered + # with governed/federated access</li><li>Sovereign models/SLMs published and adoption in public services</li><li>Incident maturity: time-to-detect, time-to-fix; red-team coverage</li><li>AI import dependency proxy: API/model spend vs domestic value capture</li><li>Energy readiness: renewable share for AI clusters + reliability metrics</li></ul><h1><a id="_Toc222253504"></a>11. Conclusion</h1><p>Sovereign AI for the Global South is not about technological isolation. It is about strategic autonomy within an interconnected world. Nations must collaborate where scale is required and localise where sovereignty is essential.</p><p>By building shared compute grids, federated data ecosystems, multilingual models, sustainable infrastructure, and trusted governance frameworks, the Global South can transition from AI consumers to AI producers.</p><p>There are distributional benefits as well. Public, identity-linked access can tilt early capacity toward public-good applications such as legal aid and farm advisories.</p><p>The next decade will determine whether emerging economies shape the intelligence layer of the digital world or merely operate within systems designed elsewhere. Sovereign AI offers a pathway toward equitable technological power, cultural representation, and developmental acceleration across the Global South.</p><ol><li id="footnote-1"><p> <a href="https://timesofindia.indiatimes.com/business/india-business/concentration-of-ai-capabilities-poses-systemic-risks-npci-chairman/articleshow/124375101.cms">https://timesofindia.indiatimes.com/business/india-business/concentration-of-ai-capabilities-poses-systemic-risks-npci-chairman/articleshow/124375101.cms</a>  <a href="#footnote-ref-1">↑</a></p></li><li id="footnote-2"><p> <a href="https://restofworld.org/2025/chinese-us-tech-foreign-ai-dependence/">https://restofworld.org/2025/chinese-us-tech-foreign-ai-dependence/</a>  <a href="#footnote-ref-2">↑</a></p></li><li id="footnote-3"><p> <a href="https://stlpartners.com/articles/data-centres/sovereign-ai/">https://stlpartners.com/articles/data-centres/sovereign-ai/</a>  <a href="#footnote-ref-3">↑</a></p></li><li id="footnote-4"><p> <a href="https://arxiv.org/abs/2511.15734">https://arxiv.org/abs/2511.15734</a>  <a href="#footnote-ref-4">↑</a></p></li><li id="footnote-5"><p> <a href="https://www.pwc.com/gx/en/ai-services/ai-works-for-governments.pdf">https://www.pwc.com/gx/en/ai-services/ai-works-for-governments.pdf</a>  <a href="#footnote-ref-5">↑</a></p></li><li id="footnote-6"><p> <a href="https://documents1.worldbank.org/curated/en/099112525160536089/pdf/P505350-59c98ca8-0803-4f23-b470-17f3dab010ab.pdf">https://documents1.worldbank.org/curated/en/099112525160536089/pdf/P505350-59c98ca8-0803-4f23-b470-17f3dab010ab.pdf</a>  <a href="#footnote-ref-6">↑</a></p></li><li id="footnote-7"><p> <a href="https://www.oecd.org/en/publications/public-procurement-for-innovation_9789264265820-en.html">https://www.oecd.org/en/publications/public-procurement-for-innovation_9789264265820-en.html</a>  <a href="#footnote-ref-7">↑</a></p></li></ol>
+    </main>
+  </div>
+</body>
+</html>
